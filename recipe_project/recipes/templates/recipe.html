@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://i.pinimg.com/originals/2a/54/7f/2a547fdfe21e2e08b3cd75e107f54b02.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff; /* Optional: adjust text color for better visibility on background */
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            background: rgba(0, 0, 0, 0.5); /* Optional: add a semi-transparent background to the container for better readability */
+            padding: 20px;
+            border-radius: 10px; /* Optional: add rounded corners */
+        }
+        h1 {
+            text-align: center;
+            color: #fff; /* Optional: change text color for better visibility */
+        }
+        a {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            text-align: center;
+            background: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        a:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Recipe Book</h1>
+        <p>This is a collection of recipes submitted by users.</p>
+        <p><a href="{% url 'submit_recipe' %}">Submit a Recipe</a></p>
+        <p><a href="{% url 'recipe_list' %}">View Recipe List</a></p>
+    </div>
+</body>
+</html>

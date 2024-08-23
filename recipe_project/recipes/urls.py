@@ -1,0 +1,9 @@
+# recipes/urls.py
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('', views.recipe_main, name='recipe_main'),
+    path('submit/', views.submit_recipe, name='submit_recipe'),
+    path('list/', views.recipe_list, name='recipe_list'),
+]

@@ -1,0 +1,14 @@
+<!-- recipes/templates/recipes/submit_recipe.html -->
+<h1>Submit a Recipe</h1>
+
+<!-- Add the image here -->
+<img src="https://kitchenlouise.com/wp-content/uploads/2020/07/submit-your-recipe-800x840.jpg" alt="Submit Your Recipe" style="width:100%; height:auto;">
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <!-- Style the submit button with green color -->
+    <button type="submit" style="background-color: green; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
+        Submit
+    </button>
+</form>
